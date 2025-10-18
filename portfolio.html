@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio - Professional Profile</title>
+  <meta name="description" content="Portfolio of projects and work samples">
+  <meta name="keywords" content="portfolio, projects, work samples, case studies">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Personal Logo -->
+        <img src="assets/img/logo.png" alt="Dane Logo" style="max-height: 40px; margin-right: 10px;">
+        <h1 class="sitename"><strong>Dane Ross</strong></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="certification.html">Certification & Training</a></li>
+          <li><a href="advocacy.html">Advocacy</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://github.com/d-quint" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com/in/drquintano/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:quintanodr@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>A showcase of my best work, projects, and creative endeavors. This portfolio will be completed and expanded in the Final Project phase.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Portfolio Grid -->
+        <div class="isotope-layout" data-layout="fitRows" data-default-filter="*" data-sort="original-order">
+          
+          <!-- Portfolio Filters -->
+          <div class="portfolio-filters-container mb-5" data-aos="fade-up" data-aos-delay="100">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All Projects</li>
+              <li data-filter=".filter-ai-ml"><i class="bi bi-cpu"></i> AI & ML</li>
+              <li data-filter=".filter-web-dev"><i class="bi bi-code-slash"></i> Web Dev</li>
+              <li data-filter=".filter-games-sims"><i class="bi bi-controller"></i> Games & Sims</li>
+              <li data-filter=".filter-educational-tech"><i class="bi bi-book"></i> Educational Tech</li>
+              <li data-filter=".filter-systems-tools"><i class="bi bi-gear"></i> Systems & Tools</li>
+              <li data-filter=".filter-award-winning"><i class="bi bi-trophy"></i> Award-Winning</li>
+            </ul>
+          </div><!-- End Portfolio Filters -->
+          
+          <div class="isotope-container row g-4">
+
+            <!-- Project 1: TrashScan -->
+            <div class="col-lg-4 col-md-6 isotope-item filter-ai-ml filter-systems-tools">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/trashscan.png" alt="TrashScan" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/trashscan.png" class="glightbox" title="TrashScan - AI Litter Detection System">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="#" class="portfolio-video-btn" data-video="https://pub-e50fadefd5a848598146f8c93fd45f59.r2.dev/videos/trashscan-demo.mp4" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        Demo Video
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">AI & Machine Learning</span>
+                  <h3>TrashScan</h3>
+                  <p>AI-powered surveillance system for real-time street litter detection using CCTV cameras, helping cities make smarter waste management decisions.</p>
+                  
+                  <div class="tech-stack mt-3 mb-3">
+                    <span class="tech-badge">YOLOv8</span>
+                    <span class="tech-badge">Faster R-CNN</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Flask</span>
+                    <span class="tech-badge">Electron</span>
+                  </div>
+                  
+                  <div class="project-links">
+                    <a href="https://github.com/Xhinvier07/trashscan-gui" target="_blank" class="btn btn-sm btn-outline-primary me-2">
+                      <i class="bi bi-github me-1"></i> GitHub
+                    </a>
+                    <a href="https://trashscan.vercel.app/" target="_blank" class="btn btn-sm btn-outline-primary">
+                      <i class="bi bi-box-arrow-up-right me-1"></i> Info Site
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Project 2: Vypr Programming Language -->
+            <div class="col-lg-4 col-md-6 isotope-item filter-systems-tools">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/vypr.png" alt="Vypr Programming Language" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/vypr.png" class="glightbox" title="Vypr - Custom Programming Language">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Systems & Tools</span>
+                  <h3>Vypr</h3>
+                  <p>Custom compiler and programming language with Python + JavaScript-inspired syntax, designed for improved readability and simplicity.</p>
+                  
+                  <div class="tech-stack mt-3 mb-3">
+                    <span class="tech-badge">C++17</span>
+                    <span class="tech-badge">Compiler Design</span>
+                    <span class="tech-badge">AST</span>
+                    <span class="tech-badge">Semantic Analysis</span>
+                  </div>
+                  
+                  <div class="project-links">
+                    <a href="https://github.com/d-quint/VYPR" target="_blank" class="btn btn-sm btn-outline-primary">
+                      <i class="bi bi-github me-1"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Project 3: SARI POS & Inventory System -->
+            <div class="col-lg-4 col-md-6 isotope-item filter-web-dev">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/sari.png" alt="SARI POS System" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/sari.png" class="glightbox" title="SARI - Point-Of-Sale & Inventory System">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="#" class="portfolio-video-btn" data-video="https://pub-e50fadefd5a848598146f8c93fd45f59.r2.dev/videos/sari-demo.mp4" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        Demo Video
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Development</span>
+                  <h3>SARI</h3>
+                  <p>Point-of-sale and inventory system designed to streamline MSME operations with regex-validated inputs and responsive UI.</p>
+                  
+                  <div class="tech-stack mt-3 mb-3">
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">SQL</span>
+                    <span class="tech-badge">UI/UX</span>
+                  </div>
+                  
+                  <div class="project-links">
+                    <a href="https://github.com/Xhinvier07/posinv" target="_blank" class="btn btn-sm btn-outline-primary me-2">
+                      <i class="bi bi-github me-1"></i> GitHub
+                    </a>
+                    <a href="https://sari.great-site.net/" target="_blank" class="btn btn-sm btn-outline-primary">
+                      <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Project 4: NEXUS AI Mentoring Platform -->
+            <div class="col-lg-4 col-md-6 isotope-item filter-ai-ml filter-educational-tech filter-award-winning">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <!-- Award Medal 1 - Hackathon Awards -->
+                  <div class="award-medal">
+                    <i class="bi bi-trophy-fill"></i>
+                  </div>
+                  <div class="award-tooltip">
+                    🥈 Second Place<br>
+                    🌟 Most Innovative<br>
+                    🤖 Best Use of AI
+                    <a href="https://devpost.com/software/nexus-qcxyuw" target="_blank">View Proof</a>
+                  </div>
+                  
+                  <!-- Award Medal 2 - PhilDev Competition -->
+                  <div class="award-medal" style="right: 70px;">
+                    <i class="bi bi-trophy-fill"></i>
+                  </div>
+                  <div class="award-tooltip" style="right: 70px;">
+                    🏅 5th Place Finalist - PhilDev's TechUP
+                    <a href="https://www.facebook.com/share/19wKCAMEWz/" target="_blank">View Proof</a>
+                  </div>
+                  
+                  <img src="assets/img/portfolio/nexus.png" alt="NEXUS AI Mentoring Platform" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/nexus.png" class="glightbox" title="NEXUS - AI Mentoring Platform">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="#" class="portfolio-video-btn" data-video="https://pub-e50fadefd5a848598146f8c93fd45f59.r2.dev/videos/nexus.mp4" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        Demo Video
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">AI & Educational Tech</span>
+                  <h3>NEXUS</h3>
+                  <p>AI mentoring and skill development platform combining personalized learning, AI-powered mentorship, and gamification for career readiness.</p>
+                  
+                  <div class="tech-stack mt-3 mb-3">
+                    <span class="tech-badge">AI/ML</span>
+                    <span class="tech-badge">Canva</span>
+                    <span class="tech-badge">UI/UX</span>
+                    <span class="tech-badge">Gamification</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Project 5: Bebol's World -->
+            <div class="col-lg-4 col-md-6 isotope-item filter-educational-tech filter-award-winning">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <!-- Award Medal -->
+                  <div class="award-medal">
+                    <i class="bi bi-trophy-fill"></i>
+                  </div>
+                  <div class="award-tooltip">
+                    🏆 SIKAPTala 2025 CHAMPION
+                    <a href="https://www.facebook.com/share/p/19TB4aVaFT/" target="_blank">View Proof</a>
+                  </div>
+                  
+                  <img src="assets/img/portfolio/bebol.png" alt="Bebol's World" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/bebol.png" class="glightbox" title="Bebol's World - Gamified Learning App">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="#" class="portfolio-video-btn" data-video="https://pub-e50fadefd5a848598146f8c93fd45f59.r2.dev/videos/bebol-demo.mp4" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        Demo Video
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Educational Tech</span>
+                  <h3>Bebol's World</h3>
+                  <p>Child-friendly gamified learning app making math and reading engaging for children and SPED learners through rewards and progress tracking.</p>
+                  
+                  <div class="tech-stack mt-3 mb-3">
+                    <span class="tech-badge">Figma</span>
+                    <span class="tech-badge">Canva</span>
+                    <span class="tech-badge">UI/UX</span>
+                    <span class="tech-badge">Gamification</span>
+                  </div>
+                  
+                  <div class="project-links">
+                    <a href="https://www.figma.com/proto/m9qbKJoxdo6W3xqAri1pnM/SIKAPTALA-BEBOT?page-id=45%3A702&node-id=45-1412&viewport=-59%2C-785%2C0.5&t=xKSYdB77xOKsLd5q-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=45%3A1412" target="_blank" class="btn btn-sm btn-outline-primary">
+                      <i class="bi bi-box-arrow-up-right me-1"></i> Figma Prototype
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Project 6: Glutaga -->
+            <div class="col-lg-4 col-md-6 isotope-item filter-games-sims filter-systems-tools">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/glutaga.png" alt="Glutaga" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/glutaga.png" class="glightbox" title="Glutaga - 2D Space Shooter">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="#" class="portfolio-video-btn" data-video="https://pub-e50fadefd5a848598146f8c93fd45f59.r2.dev/videos/glutaga-demo.mp4" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        Demo Video
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Games & Simulations</span>
+                  <h3>Glutaga</h3>
+                  <p>Galaga-inspired 2D space shooter built with C++ and OpenGL/GLUT, featuring custom pixel-art assets and retro arcade effects.</p>
+                  
+                  <div class="tech-stack mt-3 mb-3">
+                    <span class="tech-badge">C++</span>
+                    <span class="tech-badge">OpenGL</span>
+                    <span class="tech-badge">GLUT</span>
+                    <span class="tech-badge">Game Dev</span>
+                  </div>
+                  
+                  <div class="project-links">
+                    <a href="https://github.com/d-quint/glutaga" target="_blank" class="btn btn-sm btn-outline-primary">
+                      <i class="bi bi-github me-1"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Project 7: QuizFlash -->
+            <div class="col-lg-4 col-md-6 isotope-item filter-educational-tech filter-systems-tools">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/quizflash.png" alt="QuizFlash" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/quizflash.png" class="glightbox" title="QuizFlash - Digital Flashcard Manager">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Educational Tech</span>
+                  <h3>QuizFlash</h3>
+                  <p>Robust digital flashcard manager to streamline learning through easy management and use of digital flashcards.</p>
+                  
+                  <div class="tech-stack mt-3 mb-3">
+                    <span class="tech-badge">Java</span>
+                    <span class="tech-badge">Swing GUI</span>
+                    <span class="tech-badge">Desktop App</span>
+                  </div>
+                  
+                  <div class="project-links">
+                    <a href="https://github.com/d-quint/QuizFlash" target="_blank" class="btn btn-sm btn-outline-primary">
+                      <i class="bi bi-github me-1"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Project 8: Finals Simulator -->
+            <div class="col-lg-4 col-md-6 isotope-item filter-educational-tech filter-web-dev">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/finalssim.png" alt="Finals Simulator" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/finalssim.png" class="glightbox" title="Finals Simulator - Exam System with LaTeX">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Educational Tech</span>
+                  <h3>Finals Simulator</h3>
+                  <p>Modern exam/quiz system with LaTeX support, real-time preview, and configurable question sets with JSON export.</p>
+                  
+                  <div class="tech-stack mt-3 mb-3">
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Bootstrap 5</span>
+                    <span class="tech-badge">MathJax</span>
+                    <span class="tech-badge">LaTeX</span>
+                  </div>
+                  
+                  <div class="project-links">
+                    <a href="https://github.com/d-quint/finals-simulator" target="_blank" class="btn btn-sm btn-outline-primary me-2">
+                      <i class="bi bi-github me-1"></i> GitHub
+                    </a>
+                    <a href="https://d-quint.github.io/finals-simulator/" target="_blank" class="btn btn-sm btn-outline-primary">
+                      <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Project 9: Which GZBC Are You? -->
+            <div class="col-lg-4 col-md-6 isotope-item filter-web-dev">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/gzbc.png" alt="Which GZBC Are You" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/gzbc.png" class="glightbox" title="Which GZBC Are You - Personality Quiz">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Development</span>
+                  <h3>Which GZBC Are You?</h3>
+                  <p>Fun, casual personality matching test tailored for Gen Z Book Club members, designed with Tailwind CSS.</p>
+                  
+                  <div class="tech-stack mt-3 mb-3">
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Tailwind CSS</span>
+                    <span class="tech-badge">Interactive Quiz</span>
+                  </div>
+                  
+                  <div class="project-links">
+                    <a href="https://github.com/d-quint/which-gzbc-are-you" target="_blank" class="btn btn-sm btn-outline-primary me-2">
+                      <i class="bi bi-github me-1"></i> GitHub
+                    </a>
+                    <a href="https://d-quint.github.io/which-gzbc-are-you/" target="_blank" class="btn btn-sm btn-outline-primary">
+                      <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Project 10: Drag Race Simulator -->
+            <div class="col-lg-4 col-md-6 isotope-item filter-games-sims filter-web-dev">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/dragracesim.png" alt="Drag Race Simulator" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/dragracesim.png" class="glightbox" title="Drag Race Simulator">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Games & Simulations</span>
+                  <h3>Drag Race Simulator</h3>
+                  <p>Web application simulating drag competitions with custom queens, Spotify integration, and narrative or quick simulation modes.</p>
+                  
+                  <div class="tech-stack mt-3 mb-3">
+                    <span class="tech-badge">Next.js</span>
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">TypeScript</span>
+                    <span class="tech-badge">Spotify API</span>
+                  </div>
+                  
+                  <div class="project-links">
+                    <a href="https://github.com/d-quint/drag-race-simulator" target="_blank" class="btn btn-sm btn-outline-primary me-2">
+                      <i class="bi bi-github me-1"></i> GitHub
+                    </a>
+                    <a href="https://drag-race-simulator.vercel.app/" target="_blank" class="btn btn-sm btn-outline-primary">
+                      <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Isotope Container -->
+        
+        </div><!-- End Isotope Layout -->
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background: var(--surface-color); border: none; border-radius: 15px;">
+          <div class="modal-header" style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+            <h5 class="modal-title" id="videoModalLabel">Project Demo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <video id="projectVideo" controls style="border-radius: 0 0 15px 15px;">
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Video Modal -->
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
