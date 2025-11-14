@@ -37,14 +37,16 @@
       '17.jpg'
     ],
     'glutaga': [
-      '1.png',
-      '2.png',
-      '3.png'
+      '1.jpg',
+      '2.jpg',
+      '3.jpg',
+      '4.jpg',
+      '5.jpg',
     ],
     'nexus': [
-      '1.png',
-      '2.png',
-      '3.png'
+      '1.jpg',
+      '2.jpg',
+      '3.jpg'
     ],
     'sari': [
       '1.jpg',
