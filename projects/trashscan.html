@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>TrashScan - AI Litter Detection System</title>
+  <meta name="description" content="AI-powered surveillance system for real-time street litter detection">
+  <meta name="keywords" content="AI, machine learning, waste management, computer vision, YOLOv8">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS Files -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <link href="../assets/css/project-detail.css" rel="stylesheet">
+
+  <style>
+    /* Project-specific hero image overlay */
+    .project-hero::after {
+      background-image: url('../assets/img/portfolio/trashscan.png');
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="../assets/img/logo.png" alt="Dane Logo" style="max-height: 40px; margin-right: 10px;">
+        <h1 class="sitename"><strong>Dane Ross</strong></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../education.html">Education</a></li>
+          <li><a href="../experience.html">Experience</a></li>
+          <li><a href="../skills.html">Skills</a></li>
+          <li><a href="../certification.html">Certification & Training</a></li>
+          <li><a href="../advocacy.html">Advocacy</a></li>
+          <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://github.com/d-quint" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com/in/drquintano/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:quintanodr@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+      <div class="container">
+        <a href="../portfolio.html" class="back-to-portfolio">
+          <i class="bi bi-arrow-left"></i> Back to Portfolio
+        </a>
+        <div class="row align-items-center">
+          <div class="col-lg-8" data-aos="fade-up">
+            <h1>
+              TrashScan
+              <a href="https://web.facebook.com/share/p/1FrWPxgp85/" target="_blank" class="award-badge-inline" style="text-decoration: none;">
+                <i class="bi bi-trophy-fill"></i>
+                <span class="award-text">
+                  <span class="award-title">Champion</span>
+                  <span class="award-event">10th Philippine Startup Challenge</span>
+                </span>
+              </a>
+            </h1>
+            <p class="lead">A surveillance-powered integrated system leveraging existing CCTV infrastructure for automated real-time street litter density monitoring using advanced computer vision and convolutional neural networks.</p>
+            <div class="project-links">
+              <a href="https://github.com/Xhinvier07/trashscan-gui" target="_blank" class="btn btn-primary-custom">
+                <i class="bi bi-github"></i> View on GitHub
+              </a>
+              <a href="https://trashscan.vercel.app/" target="_blank" class="btn-outline-custom btn">
+                <i class="bi bi-box-arrow-up-right"></i> Visit Website
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-meta">
+              <div class="meta-item">
+                <i class="bi bi-calendar-check"></i>
+                <div>
+                  <span class="meta-label">Completed:</span>
+                  <span>August 2025</span>
+                </div>
+              </div>
+              <div class="meta-item">
+                <i class="bi bi-folder2-open"></i>
+                <div>
+                  <span class="meta-label">Category:</span>
+                  <span>AI & ML</span>
+                </div>
+              </div>
+              <div class="meta-item">
+                <i class="bi bi-people"></i>
+                <div>
+                  <span class="meta-label">Type:</span>
+                  <span>Undergrad Thesis Project</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="project-main">
+      <div class="container">
+        <div class="row">
+          
+          <!-- Main Column -->
+          <div class="col-lg-8">
+            
+            <!-- Video Demo -->
+            <div class="video-section" data-aos="fade-up">
+              <h2><i class="bi bi-play-circle"></i> Demo Video</h2>
+              <div class="video-container">
+                <video controls poster="../assets/img/portfolio/trashscan.png">
+                  <source src="https://pub-e50fadefd5a848598146f8c93fd45f59.r2.dev/videos/trashscan-demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            <!-- Overview -->
+            <div class="content-card" data-aos="fade-up">
+              <h3><i class="bi bi-info-circle"></i> Overview</h3>
+              <p>TrashScan addresses the critical limitation of traditional urban litter monitoring that relies on manual inspection methods lacking scalability and continuous coverage. By leveraging existing CCTV infrastructure already installed for security purposes, the system transforms reactive municipal waste management into proactive, data-driven environmental monitoring.</p>
+              <p>The system integrates YOLOv8 with Slicing-Aided Hyper Inference (SAHI) to tackle small object detection challenges in high-resolution surveillance footage. Through systematic optimization including genetic algorithm-based hyperparameter tuning, the model achieved superior performance with mAP@50 of 0.94 and 22.8ms GPU inference time. SAHI integration enhanced small object detection by 30.7%, while genetic algorithm optimization improved overall performance by 10.8%.</p>
+              <p>Successfully deployed in Barangay 118 Zone 9, Tondo, Manila, TrashScan implements round-robin scheduling for multi-feed processing and employs a modified Clean Environment Index for quantitative density assessment, providing municipal authorities with actionable insights through automated notifications and comprehensive analytics.</p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="content-card" data-aos="fade-up">
+              <h3><i class="bi bi-stars"></i> Key Features</h3>
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="feature-item-header">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h4 class="feature-item-title">YOLOv8 + SAHI Integration</h4>
+                  </div>
+                  <p class="feature-item-desc">Advanced computer vision combining YOLOv8's real-time detection with Slicing-Aided Hyper Inference for 30.7% improvement in small object detection, crucial for identifying litter at typical surveillance camera mounting heights.</p>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-item-header">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h4 class="feature-item-title">Multi-Feed Round-Robin Processing</h4>
+                  </div>
+                  <p class="feature-item-desc">Efficient scheduling mechanism cycles through multiple CCTV feeds at customizable intervals, enabling balanced resource allocation without requiring prohibitive hardware investments for municipal deployments.</p>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-item-header">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h4 class="feature-item-title">Modified Clean Environment Index</h4>
+                  </div>
+                  <p class="feature-item-desc">Spatially-weighted density calculation that quantifies litter impact through geometric analysis, providing objective measurements (LOW, MEDIUM, HIGH) translated into clear action thresholds for municipal personnel.</p>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-item-header">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h4 class="feature-item-title">Automated Alert System</h4>
+                  </div>
+                  <p class="feature-item-desc">Real-time notifications via Twilio SMS and email when litter density exceeds predefined thresholds, enabling immediate response from waste management teams with location-specific alerts.</p>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-item-header">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h4 class="feature-item-title">Comprehensive Analytics Dashboard</h4>
+                  </div>
+                  <p class="feature-item-desc">Interactive visualizations with D3.js showing detection logs, temporal trend analysis, ranking systems, and heat maps. Map-based interface with color-coded polygons indicates current litter density levels by street segment.</p>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-item-header">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h4 class="feature-item-title">Optimized Performance</h4>
+                  </div>
+                  <p class="feature-item-desc">Genetic algorithm-based hyperparameter optimization achieved 10.8% performance improvement. Minimal hardware requirements (2GB GPU VRAM, 4GB CPU RAM) make it suitable for edge deployment in resource-constrained barangay infrastructure.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Impact -->
+            <div class="content-card" data-aos="fade-up">
+              <h3><i class="bi bi-lightbulb"></i> Impact & Results</h3>
+              <p>TrashScan demonstrated exceptional performance and strong stakeholder acceptance through comprehensive evaluation:</p>
+              <div class="impact-grid">
+                <div class="impact-card">
+                  <div class="impact-card-icon">
+                    <i class="bi bi-trophy"></i>
+                  </div>
+                  <h4>Champion Award</h4>
+                  <p>Winner of the 10th Philippine Startup Challenge</p>
+                </div>
+                <div class="impact-card">
+                  <div class="impact-card-icon">
+                    <i class="bi bi-graph-up"></i>
+                  </div>
+                  <h4>94% Accuracy</h4>
+                  <p>mAP@50 of 0.94 with 22.8ms GPU inference time</p>
+                </div>
+                <div class="impact-card">
+                  <div class="impact-card-icon">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <h4>Real-world Deployment</h4>
+                  <p>Successfully deployed for a one-week pilot study in Barangay 118 Zone 9, Tondo, Manila</p>
+                </div>
+                <div class="impact-card">
+                  <div class="impact-card-icon">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <h4>Strong Acceptance</h4>
+                  <p>Achieved TAM scores 4.21-4.62/5.0 across stakeholders, ISO 25010: 4.88/5.0</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-lg-4">
+            <div class="project-sidebar">
+              
+              <!-- Tech Stack -->
+              <div class="sidebar-card" data-aos="fade-up">
+                <h3><i class="bi bi-tools"></i> Tech Stack</h3>
+                <div class="tech-grid">
+                  <div class="tech-item">
+                    <i class="bi bi-robot"></i>
+                    <span>YOLOv8</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="bi bi-grid-3x3"></i>
+                    <span>SAHI</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="bi bi-code-slash"></i>
+                    <span>Python</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="bi bi-cup-hot"></i>
+                    <span>Flask</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="bi bi-window"></i>
+                    <span>Electron</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="bi bi-filetype-js"></i>
+                    <span>JavaScript</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="bi bi-hdd-network"></i>
+                    <span>Node.js</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="bi bi-chat-dots"></i>
+                    <span>Twilio</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="bi bi-bar-chart"></i>
+                    <span>D3.js</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Type -->
+              <div class="sidebar-card" data-aos="fade-up">
+                <h3><i class="bi bi-folder2-open"></i> Project Type</h3>
+                <div class="project-type-list">
+                  <div class="type-item">
+                    <div class="type-icon">
+                      <i class="bi bi-robot"></i>
+                    </div>
+                    <div class="type-content">
+                      <h4>AI & Computer Vision</h4>
+                      <p>Deep learning with CNNs for environmental surveillance and automated monitoring</p>
+                    </div>
+                  </div>
+                  <div class="type-item">
+                    <div class="type-icon">
+                      <i class="bi bi-bullseye"></i>
+                    </div>
+                    <div class="type-content">
+                      <h4>Research & Optimization</h4>
+                      <p>Systematic architecture evaluation and genetic algorithm-based hyperparameter tuning</p>
+                    </div>
+                  </div>
+                  <div class="type-item">
+                    <div class="type-icon">
+                      <i class="bi bi-building"></i>
+                    </div>
+                    <div class="type-content">
+                      <h4>Municipal Deployment</h4>
+                      <p>Real-world implementation in Tondo, Manila with validated stakeholder acceptance</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section">
+      <div class="container">
+        <h2 class="text-center" data-aos="fade-up">Project Gallery</h2>
+        <div class="screenshot-carousel swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "centeredSlides": true,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 20
+                },
+                "768": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 30
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 40
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="../assets/img/portfolio/trashscan.png" class="glightbox" data-gallery="gallery1">
+                <img src="../assets/img/portfolio/trashscan.png" alt="TrashScan Interface" class="img-fluid">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="../assets/img/portfolio/trashscan.png" class="glightbox" data-gallery="gallery1">
+                <img src="../assets/img/portfolio/trashscan.png" alt="Detection Results" class="img-fluid">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="../assets/img/portfolio/trashscan.png" class="glightbox" data-gallery="gallery1">
+                <img src="../assets/img/portfolio/trashscan.png" alt="Heat Map View" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back Button -->
+    <section class="back-section">
+      <div class="container">
+        <a href="../portfolio.html" class="btn btn-outline-custom">
+          <i class="bi bi-arrow-left"></i> Back to Portfolio
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Project Gallery Dynamic Loader -->
+  <script src="../assets/js/project-gallery.js"></script>
+
+</body>
+
+</html>
